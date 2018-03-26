@@ -8,3 +8,7 @@ code and run the following command on linux terminal:
 This will compile the code and report errors identified by the compiler as shown below:
 
 ![alt text](https://image.ibb.co/nkwfC7/error.png)
+
+By passing the file to the program flawfinder the following output is display:
+
+![alt text](https://image.ibb.co/dmu0C7/p2.png)
