@@ -26,11 +26,11 @@ And By passing the file to Cppcheck program, the following results are displayed
 
 Further vulnerabilities observed:
 
-•	There is no checking of null values being entered in the ‘main’, which leads to a vulnerability which may be prone to variable modification.
-•	The program does not check whether the entered input is a valid numeric input (line 51 - 62), thus this program can accept alphabets and characters as well.
-•	There is no means of accepting input from the user anywhere in the code.
-•	On line 73, in the if block where the following condition is given:
-if (increment < 0 || increment > 8)
+•	There is no checking of null values being entered in the ‘main’, which leads to a vulnerability which may be prone to variable modification.  
+•	The program does not check whether the entered input is a valid numeric input (line 51 - 62), thus this program can accept alphabets and characters as well.  
+•	There is no means of accepting input from the user anywhere in the code.  
+•	On line 73, in the if block where the following condition is given:  
+if (increment < 0 || increment > 8)  
 The condition will also accept 0 as a value, which is an undesirable value since there is no ‘=’ sign in the condition.
 
 
