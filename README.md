@@ -1,4 +1,4 @@
-# Static-Source-Code-Analysis-Code-Review-
+# Static-Source-Code-Analysis (Code Review)
 Static Source Code Analysis using a simple program which examines a simple C / C++ code and reports for possible security loopholes.
 
 This demonstration checks a simple program written in C for possible security flaws using flawfinder and Cppcheck program. Download the
