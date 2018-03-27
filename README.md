@@ -20,8 +20,8 @@ And By passing the file to Cppcheck program, the following results are displayed
 # Description of Vulnerabilities:
 
     Assigning an integer to a pointer is not portable.
-•	 Line 138: Assigning an integer (int/long/etc) to a pointer is not portable across different platforms and compilers. For example in 32-bit Windows and linux they are same width, but in 64-bit Windows and linux they are of different width. In worst case you end up assigning 64-bit integer to 32-bit pointer. The safe way is to store addresses only in pointer types (or typedefs like uintptr_t).\n
-•	Line 128: %ld in format string (no. 2) requires 'long' but the argument type is 'double'.\n
+•	 Line 138: Assigning an integer (int/long/etc) to a pointer is not portable across different platforms and compilers. For example in 32-bit Windows and linux they are same width, but in 64-bit Windows and linux they are of different width. In worst case you end up assigning 64-bit integer to 32-bit pointer. The safe way is to store addresses only in pointer types (or typedefs like uintptr_t).  
+•	Line 128: %ld in format string (no. 2) requires 'long' but the argument type is 'double'.  
 •	Line 102: Variable 'tid' is assigned a value that is never used.\n
 
 Further vulnerabilities observed:
