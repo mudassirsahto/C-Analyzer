@@ -16,14 +16,14 @@ And By passing the file to Cppcheck program, the following results are displayed
 
 ![alt text](https://image.ibb.co/eSZNAS/cppcheck.png)
 
-# Description of Vulnerabilities:
+# Description of Code Issues:
 
     Assigning an integer to a pointer is not portable.
 •	 Line 138: Assigning an integer (int/long/etc) to a pointer is not portable across different platforms and compilers. For example in 32-bit Windows and linux they are same width, but in 64-bit Windows and linux they are of different width. In worst case you end up assigning 64-bit integer to 32-bit pointer. The safe way is to store addresses only in pointer types (or typedefs like uintptr_t).  
 •	Line 128: %ld in format string (no. 2) requires 'long' but the argument type is 'double'.  
 •	Line 102: Variable 'tid' is assigned a value that is never used.\n
 
-Further vulnerabilities observed:
+Further risks observed:
 
 •	There is no checking of null values being entered in the ‘main’, which leads to a vulnerability which may be prone to variable modification.  
 •	The program does not check whether the entered input is a valid numeric input (line 51 - 62), thus this program can accept alphabets and characters as well.  
