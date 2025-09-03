@@ -1,8 +1,7 @@
 # Static-Source-Code-Analysis (Code Review)
-Static Source Code Analysis using a simple program which examines a simple C / C++ code and reports for possible security loopholes.
+Static Source Code Analysis using a simple program which examines a simple C / C++ code and reports for common issues such as syntax errors, unused variables, and potential memory-related risks.
 
-This demonstration checks a simple program written in C for possible security flaws using flawfinder and Cppcheck program. Download the
-code and run the following command on linux terminal:
+Download the code and run the following command on linux terminal:
    $ gcc -o a1_threads a1_threads.c -l pthread
    
 This will compile the code and report errors identified by the compiler as shown below:
